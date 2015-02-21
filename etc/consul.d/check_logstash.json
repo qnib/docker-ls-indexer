@@ -10,6 +10,7 @@
             "interval": "10s"
         }]
     },
+    {
         "id": "ls-syslog",
         "name": "syslog",
         "tags": ["logstash"],
