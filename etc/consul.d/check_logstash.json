@@ -1,0 +1,23 @@
+{
+  "services": [ 
+    {
+        "id": "ls-lumberjack",
+        "name": "lumberjack",
+        "tags": ["logstash"],
+        "port": 5500,
+        "checks": [{
+            "script": "supervisorctl status logstash|grep RUNNING",
+            "interval": "10s"
+        }]
+    },
+        "id": "ls-syslog",
+        "name": "syslog",
+        "tags": ["logstash"],
+        "port": 5500,
+        "checks": [{
+            "script": "supervisorctl status logstash|grep RUNNING",
+            "interval": "10s"
+        }]
+    }
+  ]
+}
