@@ -11,3 +11,5 @@ ADD etc/pki/tls/private/logstash-forwarder.key /etc/pki/tls/private/
 
 # Add redis startscript
 ADD etc/supervisord.d/redis.ini /etc/supervisord.d/
+# Overwrite logstash check with service checks
+ADD etc/consul.d/check_logstash.json /etc/consul.d/check_logstash.json
